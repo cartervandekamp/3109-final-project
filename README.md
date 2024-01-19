@@ -11,11 +11,7 @@ Carter Vandekamp, Aaron Tripp, Eric Qian
 
 # APIs
 ## Food Recipe Database API - Edamam
-https://www.edamam.com/
+[Edamam](https://www.edamam.com/)
 
 ## TripAdvisor API
-https://developer-tripadvisor.com/home/
-
-
-
-
+[TripAdvisor](https://developer-tripadvisor.com/home/)
