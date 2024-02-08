@@ -1,0 +1,36 @@
+/* RecipeCard.module.css */
+.card {
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  .image {
+    width: 100%; /* Set image width to 100% */
+    display: block;
+  }
+  
+  .content {
+    padding: 16px;
+    flex-grow: 1; /* Allow content to grow to fill available space */
+    display: flex; /* Use flexbox for content layout */
+    justify-content: space-between; /* Distribute items along the main axis with space-between */
+    align-items: flex-start; /* Align items at the start of the cross axis */
+  }
+  
+  .name {
+    margin-bottom: 8px;
+  }
+  
+  .calories {
+    margin-bottom: 8px;
+  }
+  
+  .link {
+    color: black; /* Change link color to black */
+    text-decoration: none;
+  }
+  
