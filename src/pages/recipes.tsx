@@ -33,8 +33,8 @@ const RecipesPage = () => {
             handleSearch(formData.get('query') as string);
           }}
         >
-          <input type="text" name="query" placeholder="Search recipes..." />
-          <button type="submit">Search</button>
+          <input type="text" name="query" placeholder="Search recipes..." className={styles.search}/>
+          {/* <button type="submit">Search</button> */}
         </form>
         <div className={styles.recipeContainer}>
           {recipes.map((recipe: any, index: number) => ( 

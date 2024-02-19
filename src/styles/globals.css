@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 :root {
     --primary-black: #1A1A1A;
     --primary-white: #FFF;

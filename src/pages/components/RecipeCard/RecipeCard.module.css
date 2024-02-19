@@ -23,22 +23,23 @@
   flex-direction: row;
   justify-content: space-between; 
   align-items: center;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 15px 0px 15px;
+  font-size: 0.9rem;
 }
 
 .name {
   margin-bottom: 8px;
-  color: #525252; 
+  color: var(--body-text);
   font-weight: bold;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 15px 0px 15px;
 }
 
 .calories {
-  color: #525252; 
+  color: var(--body-text-light);
 }
 
 .link {
-  color: #525252; 
+  color: var(--body-text);
   text-decoration: none;
   font-weight: bold;
 }
