@@ -13,7 +13,6 @@ const RecipeCard = ({ recipe }: RecipeCardProps) => {
       <img className={styles.image} src={image} alt={label} />
       <p className={styles.name}>{label}</p>
       <div className={styles.content}>
-       
         <p className={styles.calories}>Calories: {Math.round(calories)}</p>
         <a className={styles.link} href={url} target="_blank" rel="noopener noreferrer">
           View Recipe

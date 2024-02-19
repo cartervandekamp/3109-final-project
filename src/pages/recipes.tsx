@@ -21,21 +21,26 @@ const RecipesPage = () => {
 
   return (
     <main className={styles.main}>
-      <h1>Edamam Recipe Search</h1>
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          const formData = new FormData(e.currentTarget);
-          handleSearch(formData.get('query') as string);
-        }}
-      >
-        <input type="text" name="query" placeholder="Search recipes..." />
-        <button type="submit">Search</button>
-      </form>
-      <div className={styles.recipeContainer}>
-        {recipes.map((recipe: any, index: number) => ( 
-          <RecipeCard key={index} recipe={recipe.recipe} />
-        ))}
+      <div className={styles.primaryContainer}>
+        <div className={styles.titleContainer}>
+          <h2>Hey there,</h2>
+          <h1>What's on the menu today?</h1>
+        </div>
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            const formData = new FormData(e.currentTarget);
+            handleSearch(formData.get('query') as string);
+          }}
+        >
+          <input type="text" name="query" placeholder="Search recipes..." />
+          <button type="submit">Search</button>
+        </form>
+        <div className={styles.recipeContainer}>
+          {recipes.map((recipe: any, index: number) => ( 
+            <RecipeCard key={index} recipe={recipe.recipe} />
+          ))}
+        </div>
       </div>
     </main>
   );

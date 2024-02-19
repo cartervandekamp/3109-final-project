@@ -6,9 +6,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.titleContainer h2 {
+    color: black;
+}
+
+.titleContainer h1 {
+    color: black;
+}
+
+.primaryContainer {
+    background-color: white;
+    width: 70%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .recipeContainer {
-    background-color: white;
-    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2%;
 }

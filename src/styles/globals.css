@@ -1,0 +1,12 @@
+:root {
+    --primary-black: #1A1A1A;
+    --primary-white: #FFF;
+    --primary-gold: #FFEDA6;
+    --primary-green: #39542F;
+    --body-text: #525252; /* Body text */
+    --body-text-light: #8F8F8F; /* Body text light */
+    --off-white: #F8F8F8; /* Container Fill */
+    --light-gray: #E6E6E6; /* Borders */
+    --inactive-gray: #B3B3B3; /* Inactive buttons */
+    --drop-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+}
