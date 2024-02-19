@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import RecipeCard from './components/RecipeCard';
+import styles from '../styles/recipes.module.css'; 
 
 const RecipesPage = () => {
   const [recipes, setRecipes] = useState<any[]>([]); 
@@ -19,7 +20,7 @@ const RecipesPage = () => {
   };
 
   return (
-    <div>
+    <main className={styles.main}>
       <h1>Edamam Recipe Search</h1>
       <form
         onSubmit={(e) => {
@@ -31,12 +32,12 @@ const RecipesPage = () => {
         <input type="text" name="query" placeholder="Search recipes..." />
         <button type="submit">Search</button>
       </form>
-      <div>
+      <div className={styles.recipeContainer}>
         {recipes.map((recipe: any, index: number) => ( 
           <RecipeCard key={index} recipe={recipe.recipe} />
         ))}
       </div>
-    </div>
+    </main>
   );
 };
 
