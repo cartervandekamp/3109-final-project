@@ -1,0 +1,57 @@
+.main {
+    background-color: rgb(245, 245, 245);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.primaryContainer {
+    background-color: white;
+    width: 60%;
+    min-height: 100vh;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--drop-shadow);
+}
+
+.titleContainer h2 {
+    color: var(--body-text);;
+    font-weight: 400;
+    margin: 0;
+}
+
+.titleContainer h1 {
+    color: var(--primary-black);
+    margin: 10px 0 0 0;
+}
+
+.search {
+    background-color: var(--off-white);
+    border: none;
+    height: 60px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: var(--drop-shadow);
+    padding: 0 20px;
+    margin: 30px 0 50px 0;
+    font-size: 1.15rem;
+    outline: 2px solid transparent;
+    transition: 150ms ease-in-out;
+    box-sizing: border-box;
+}
+
+.search:focus {
+    outline: 2px solid var(--primary-green);
+}
+
+.recipeContainer {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2%;
+    justify-content: space-between;
+}

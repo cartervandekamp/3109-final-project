@@ -1,0 +1,52 @@
+.card {
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--drop-shadow);
+    background-color: var(--off-white);
+    display: flex; 
+    flex-direction: column; 
+    width: calc(25% - 2%);
+    min-width: 200px;
+    height: 100%;
+    margin-bottom: 2%;
+    font-size: 1rem;
+  }
+  
+  .image {
+    width: 100%; 
+    display: block;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0px 15px 0px 15px;
+    font-size: 0.9rem;
+  }
+  
+  .name {
+    margin-bottom: 8px;
+    color: var(--body-text);
+    font-weight: bold;
+    padding: 0px 15px 0px 15px;
+  }
+  
+  .calories {
+    color: var(--body-text-light);
+  }
+  
+  .link {
+    color: var(--body-text);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .label {
+    flex-grow: 1; 
+    display: flex; 
+    align-items: flex-start;
+  }
+  
