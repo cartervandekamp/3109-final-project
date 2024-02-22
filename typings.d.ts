@@ -7,3 +7,10 @@ interface IRecipe {
       url: string;
     
   }
+
+  interface IRestaurant {
+    name: string;
+    image_url: string;
+    url: string;
+  }
+  

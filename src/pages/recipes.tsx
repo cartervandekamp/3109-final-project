@@ -34,7 +34,7 @@ const RecipesPage = () => {
           }}
         >
           <input type="text" name="query" placeholder="Search recipes..." className={styles.search}/>
-          {/* <button type="submit">Search</button> */}
+          <button type="submit">Search</button>
         </form>
         <div className={styles.recipeContainer}>
           {recipes.map((recipe: any, index: number) => ( 
