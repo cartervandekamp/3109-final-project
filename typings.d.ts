@@ -8,9 +8,9 @@ interface IRecipe {
     
   }
 
-  interface IRestaurant {
-    name: string;
-    image_url: string;
-    url: string;
-  }
-  
+interface IRestaurant {
+  formatted_address: string;
+  name: string;
+  vicinity: string;
+  icon: string;
+}
