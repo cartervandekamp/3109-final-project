@@ -1,17 +1,18 @@
 import React from 'react';
+import Link from 'next/link';
 
 const DesktopNavbar = () => {
     return (
         <nav className="desktop-navbar">
             <div className="nav-links">
-            <div className="title">
-            <img src="/icons/Logo Green.png"></img>
-            <a href="/home">Culinary Compass</a>
-            </div>
-                <a href="/home">Home</a>
-                <a href="/recipe">Recipe</a>
-                <a href="/restaurant">Restaurant</a>
-                <a href="/profile">Profile</a>
+                <div className="title">
+                    <img src="/icons/Logo Green.png" alt="Logo" />
+                    <Link href="/home">Culinary Compass</Link>
+                </div>
+                <Link href="/home">Home</Link>
+                <Link href="/recipes">Recipe</Link>
+                <Link href="/restaurants">Restaurants</Link>
+                <Link href="/profile">Profile</Link>
             </div>
         </nav>
     );
