@@ -7,12 +7,12 @@ const DesktopNavbar = () => {
             <div className="nav-links">
                 <div className="title">
                     <img src="/icons/Logo Green.png" alt="Logo" />
-                    <Link href="/home">Culinary Compass</Link>
+                    <Link href="/">Culinary Compass</Link>
                 </div>
-                <Link href="/home">Home</Link>
+                <Link href="/">Home</Link>
                 <Link href="/recipes">Recipe</Link>
                 <Link href="/restaurants">Restaurants</Link>
-                <Link href="/profile">Profile</Link>
+                <Link href="/info">Info</Link>
             </div>
         </nav>
     );

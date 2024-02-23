@@ -13,8 +13,8 @@ const MobileNavbar = () => {
       <a href="/restaurant">
         <img src="RestaurantIconInactive.svg" alt="Restaurant" />
       </a>
-      <a href="/profile">
-        <img src="ProfileIconInactive.svg" alt="Profile" />
+      <a href="/info">
+        <img src="ProfileIconInactive.svg" alt="Info" />
       </a>
     </nav>
   );
