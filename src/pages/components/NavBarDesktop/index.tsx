@@ -1,11 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
+import styles from './NavBarDesktop.module.css'; 
 
 const DesktopNavbar = () => {
     return (
-        <nav className="desktop-navbar">
-            <div className="nav-links">
-                <div className="title">
+        <nav className={styles.desktopNavbar}>
+            <div className={styles.navLinks}>
+                <div className={styles.title}>
                     <img src="/icons/Logo Green.png" alt="Logo" />
                     <Link href="/">Culinary Compass</Link>
                 </div>

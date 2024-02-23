@@ -1,4 +1,4 @@
-.desktop-navbar {
+/* .desktop-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,9 +23,9 @@
   text-decoration: none;
   color: #B3B3B3; 
   font-weight: bold;
-}
+} */
 
-.nav-links {
+/* .nav-links {
   display: flex;
   justify-content: flex-end;
   margin-right: 22%;
@@ -43,7 +43,7 @@
 
 .nav-links a:hover {
   color: #39542F;
-}
+} */
 
 
 /* Mobile and Tablet screens */
