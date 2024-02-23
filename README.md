@@ -21,3 +21,15 @@ Carter Vandekamp, Aaron Tripp, Eric Qian
 ## Google Places API
 
 [Google](https://developers.google.com/maps/documentation/places/web-service/search-nearby)
+
+
+## Cypress
+
+1. Install Cypress
+npm install cypress --save-dev
+
+2. Change the moduleResolution to "node" in tsconfig.json
+"moduleResolution": "node",
+
+3. Open app
+npx cypress open
