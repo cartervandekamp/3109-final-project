@@ -1,0 +1,28 @@
+/* Initial state - mobile navbar is not displayed */
+.desktop-navbar {
+  display: block;
+}
+
+.mobile-navbar {
+  display: none;
+}
+
+/* Mobile and Tablet screens */
+@media screen and (max-width: 767px) {
+  .desktop-navbar {
+    display: none;
+  }
+  .mobile-navbar {
+    display: block;
+  }
+}
+
+/* Desktop screens */
+@media screen and (min-width: 768px) {
+  .desktop-navbar {
+    display: block;
+  }
+  .mobile-navbar {
+    display: none;
+  }
+}
