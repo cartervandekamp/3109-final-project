@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import RestaurantCard from './components/RestaurantCard';
 import styles from '../styles/restaurants.module.css';
-import MobileNavbar from './components/NavBarMobile';
-import DesktopNavbar from './components/NavBarDesktop';
+import NavbarMobile from './components/NavbarMobile';
+import NavbarDesktop from './components/NavbarDesktop';
 
 const RestaurantsPage = () => {
   const [restaurants, setRestaurants] = useState<IRestaurant[]>([]);
@@ -19,8 +19,8 @@ const RestaurantsPage = () => {
 
   return (
     <>
-    <MobileNavbar />
-    <DesktopNavbar />
+    <NavbarMobile activePage="restaurants" />
+    <NavbarDesktop />
     <main className={styles.main}>
       <div className={styles.primaryContainer}>
         <div className={styles.titleContainer}>

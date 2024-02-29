@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import RecipeCard from './components/RecipeCard';
 import styles from '../styles/recipes.module.css'; 
-import MobileNavbar from './components/NavBarMobile';
-import DesktopNavbar from './components/NavBarDesktop';
+import NavbarMobile from './components/NavbarMobile';
+import NavbarDesktop from './components/NavbarDesktop';
 
 const RecipesPage = () => {
   const [recipes, setRecipes] = useState<any[]>([]); 
@@ -22,8 +22,8 @@ const RecipesPage = () => {
 
   return (
     <>
-    <MobileNavbar />
-    <DesktopNavbar />
+    <NavbarMobile activePage="recipes" />
+    <NavbarDesktop />
     <main className={styles.main}>
       <div className={styles.primaryContainer}>
         <div className={styles.titleContainer}>

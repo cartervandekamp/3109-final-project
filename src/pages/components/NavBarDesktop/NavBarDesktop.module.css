@@ -1,38 +1,38 @@
-.desktopNavbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 1.5rem;
-    justify-content: center;
-    padding: 1rem 0;
-    width: 100%;
-  }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-white);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.5rem;
+  justify-content: center;
+  padding: 1rem 0;
+  width: 100%;
+}
 
-  .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
-  }
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
 
-  .navLinks {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-  
-  .navLinks a {
-    text-decoration: none;
-    color: #B3B3B3;
-    font-weight: bold;
-  }
-  
-  .navLinks a:hover {
-    color: #39542F;
-  }
+.navLinks {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: var(--inactive-gray);
+  font-weight: bold;
+}
+
+.navLinks a:hover {
+  color: var(--primary-green);
+}
   
   
   .logo {
@@ -54,7 +54,7 @@
   }
 
   @media screen and (max-width: 767px) {
-    .desktopNavbar {
+    .navbar {
       display: none;
     }
   }

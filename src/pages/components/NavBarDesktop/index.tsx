@@ -1,24 +1,24 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from './NavBarDesktop.module.css'; 
+import styles from './NavbarDesktop.module.css'; 
 
-const DesktopNavbar = () => {
+const NavbarDesktop = () => {
     return (
-        <div className={styles.desktopNavbar}>
+        <div className={styles.navbar}>
             <div className={styles.content}>
-            <div className={styles.logo}>
-                <img src="/icons/Logo Green.png" alt="Logo" />
-                <Link href="/">Culinary Compass</Link>
+                <div className={styles.logo}>
+                    <Link href="/"><img src="/icons/Logo Green.png" alt="Logo" /></Link>
+                    {/* <Link href="/">Culinary Compass</Link> */}
+                </div>
+                <div className={styles.navLinks}>
+                    <Link href="/">Home</Link>
+                    <Link href="/recipes">Recipe</Link>
+                    <Link href="/restaurants">Restaurants</Link>
+                    <Link href="/info">Info</Link>
+                </div>
             </div>
-            <div className={styles.navLinks}>
-            <Link href="/">Home</Link>
-            <Link href="/recipes">Recipe</Link>
-            <Link href="/restaurants">Restaurants</Link>
-            <Link href="/info">Info</Link>
         </div>
-        </div>
-    </div>
     );
 };
 
-export default DesktopNavbar;
+export default NavbarDesktop;
