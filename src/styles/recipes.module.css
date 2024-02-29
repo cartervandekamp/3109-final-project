@@ -55,3 +55,17 @@
     gap: 2%;
     justify-content: space-between;
 }
+
+/* MOBILE STYLES */
+
+@media screen and (max-width: 767px) {
+    .primaryContainer {
+        width: 90%;
+        padding: 0;
+        box-shadow: none;
+        padding-top: 1rem;
+    }
+    .main {
+        background-color: var(--primary-white);
+    }
+  }

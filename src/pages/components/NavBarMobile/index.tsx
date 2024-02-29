@@ -19,19 +19,19 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ activePage }) => {
     return (
         <div className={styles.navbar}>
             <Link href="/" className={styles.navLinks}>
-                <Image src={`/icons/${getIconPath('index')}`} alt="Home" width={40} height={40} />
+                <Image src={`/icons/${getIconPath('index')}`} alt="Home" width={35} height={35} />
                 <div className={getTextColor('index')}>Home</div>
             </Link>
             <Link href="/recipes" className={styles.navLinks}>
-                <Image src={`/icons/${getIconPath('recipes')}`} alt="Recipes" width={40} height={40} />
+                <Image src={`/icons/${getIconPath('recipes')}`} alt="Recipes" width={35} height={35} />
                 <div className={getTextColor('recipes')}>Recipes</div>
             </Link>
             <Link href="/restaurants" className={styles.navLinks}>
-                <Image src={`/icons/${getIconPath('restaurants')}`} alt="Restaurants" width={40} height={40} />
+                <Image src={`/icons/${getIconPath('restaurants')}`} alt="Restaurants" width={35} height={35} />
                 <div className={getTextColor('restaurants')}>Restaurants</div>
             </Link>
             <Link href="/profile" className={styles.navLinks}>
-                <Image src={`/icons/${getIconPath('profile')}`} alt="Profile" width={40} height={40} />
+                <Image src={`/icons/${getIconPath('profile')}`} alt="Profile" width={35} height={35} />
                 <div className={getTextColor('profile')}>Profile</div>
             </Link>
         </div>
