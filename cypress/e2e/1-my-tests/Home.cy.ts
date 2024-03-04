@@ -21,7 +21,7 @@ context('Home Page Tests', () => {
   it('should have a search bar on the page', () => {
     cy.get('input').should('exist');
   });
-
+  
 });
 
 export{}
