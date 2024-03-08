@@ -1,0 +1,20 @@
+.recipeContainer {
+    display: flex;
+    overflow-x: scroll;
+    padding-bottom: 20px; 
+
+  }
+  
+  .recipeContainer::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .recipeContainer > * {
+    flex-shrink: 0;
+    margin-right: 10px; 
+  }
+  
+  .recipeContainer > *:last-child {
+    margin-right: 0; 
+  }
+  

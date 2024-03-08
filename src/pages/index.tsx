@@ -2,20 +2,29 @@ import Image from "next/image";
 import Link from "next/link";
 import NavbarMobile from '@/components/NavbarMobile';
 import NavbarDesktop from '@/components/NavbarDesktop';
+import React from "react";
+import HomePageRecipe from "@/components/HomePageRecipe";
+
+import styles from '@/styles/home.module.css';
+
+
 
 export default function Home() {
   return (
     <>
       <NavbarMobile activePage="index" />
       <NavbarDesktop />
-      <main className={`flex min-h-screen flex-col items-center justify-between p-24 `}>
-        <div>
-          
-          <Link href="/recipes">
-          Recipes  
-          </Link>
-          <br></br>
-          <Link href="/restaurants">Restaurants</Link>
+      <main className={styles.main}>
+  
+        <div className={styles.primaryContainer}>
+        <div className={styles.titleContainer}>
+          <h2>Hey there,</h2>
+          <h1>What's on the menu today?</h1>
+          </div>
+          <div className={styles.recipeContainer}>
+          <h3 className={styles.featuredText}>Featured Recipes</h3>
+          <HomePageRecipe/>
+          </div>
         </div>
       </main>
     </>
