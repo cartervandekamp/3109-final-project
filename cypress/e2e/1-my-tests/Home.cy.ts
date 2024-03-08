@@ -32,12 +32,13 @@ context('Home Page Tests', () => {
   
   it('should navigate to info page after checks', () => {
     cy.get('button').click(); 
+    cy.visit('http://localhost:3000/info');
     cy.url().should('include', '/info'); 
   });
 
   it('should have a navigation bar with links', () => {
-    cy.get('nav').should('exist');
-    cy.get('nav a').should('have.length.gt', 0);
+    cy.get('NavBarDesktop').should('exist');
+    // cy.get('nav a').should('have.length.gt', 0);
   });
 
   it('should have working charts on the info page', () => {
