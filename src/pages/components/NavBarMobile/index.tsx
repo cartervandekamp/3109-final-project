@@ -30,9 +30,9 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ activePage }) => {
                 <Image src={`/icons/${getIconPath('restaurants')}`} alt="Restaurants" width={35} height={35} />
                 <div className={getTextColor('restaurants')}>Restaurants</div>
             </Link>
-            <Link href="/profile" className={styles.navLinks}>
-                <Image src={`/icons/${getIconPath('profile')}`} alt="Profile" width={35} height={35} />
-                <div className={getTextColor('profile')}>Profile</div>
+            <Link href="/info" className={styles.navLinks}>
+                <Image src={`/icons/${getIconPath('info')}`} alt="Info" width={35} height={35} />
+                <div className={getTextColor('info')}>Info</div>
             </Link>
         </div>
     );
