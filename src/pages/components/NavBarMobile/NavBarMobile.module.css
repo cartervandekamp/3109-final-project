@@ -9,6 +9,7 @@
     font-family: 'Lexend Deca', sans-serif;
     justify-content: center;
     padding: 1rem 0;
+    z-index: 99 !important;
     width: 100%;
   }
 

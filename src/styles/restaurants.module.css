@@ -10,7 +10,7 @@
 }
 
 .primaryContainer {
-    background-color: white;
+    background-color: var(--primary-white);
     width: 60%;
     min-height: 100vh;
     padding: 5rem;
@@ -30,11 +30,19 @@
     margin: 10px 0 0 0;
 }
 
+.searchContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+}
+
 .search {
     background-color: var(--off-white);
     border: none;
     height: 60px;
-    width: 100%;
+    width: calc(100% - 140px);
     border-radius: 12px;
     box-shadow: var(--drop-shadow);
     padding: 0 20px;
@@ -49,9 +57,49 @@
     outline: 2px solid var(--primary-green);
 }
 
-.recipeContainer {
+.searchButton {
+    background-color: var(--primary-green);
+    outline: 2px solid var(--primary-green);
+    border: none;
+    height: 60px;
+    width: 120px;
+    border-radius: 12px;
+    color: var(--primary-white);
+    box-shadow: var(--drop-shadow);
+    padding: 0 20px;
+    margin: 30px 0 50px 0;
+    font-size: 1.15rem;
+    font-weight: bold;
+    outline: 2px solid transparent;
+    transition: 150ms ease-in-out;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.searchButton:hover {
+    background-color: transparent;
+    color: var(--primary-green);
+    outline: 2px solid var(--primary-green);
+}
+
+.restaurantContainer {
     display: flex;
     flex-flow: row wrap;
     gap: 2%;
     justify-content: space-between;
 }
+
+/* MOBILE STYLES */
+
+@media screen and (max-width: 767px) {
+    .primaryContainer {
+        width: 90%;
+        padding: 0;
+        box-shadow: none;
+        padding-top: 1rem;
+    }
+
+    .main {
+        background-color: var(--primary-white);
+    }
+  }

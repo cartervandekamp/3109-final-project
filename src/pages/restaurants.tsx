@@ -19,8 +19,10 @@ const RestaurantsPage = () => {
 
   return (
     <>
-    <NavbarMobile activePage="restaurants" />
-    <NavbarDesktop />
+    <div className={styles.nav}>
+      <NavbarMobile activePage="restaurants" />
+      <NavbarDesktop />
+    </div>
     <main className={styles.main}>
       <div className={styles.primaryContainer}>
         <div className={styles.titleContainer}>
@@ -34,9 +36,11 @@ const RestaurantsPage = () => {
             handleSearch(formData.get('query') as string);
           }}
         >
-          <input type="text" name="query" placeholder="Search restaurants..." className={styles.search} />
-          <button type="submit">Search</button>
-        </form>
+        <div className={styles.searchContainer}>
+          <input type="text" name="query" placeholder="Search restaurants..." className={styles.search}/>
+          <button type="submit" className={styles.searchButton}>Search</button>
+        </div>
+      </form>
         <div className={styles.restaurantContainer}>
           {restaurants.map((restaurant: IRestaurant, index: number) => (
             <RestaurantCard
