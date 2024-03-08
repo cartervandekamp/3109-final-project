@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import RestaurantCard from './components/RestaurantCard';
+import RestaurantCard from '@/components/RestaurantCard';
 import styles from '../styles/restaurants.module.css';
-import NavbarMobile from './components/NavbarMobile';
-import NavbarDesktop from './components/NavbarDesktop';
+import NavbarMobile from '@/components/NavbarMobile';
+import NavbarDesktop from '@/components/NavbarDesktop';
 
 const RestaurantsPage = () => {
   const [restaurants, setRestaurants] = useState<IRestaurant[]>([]);

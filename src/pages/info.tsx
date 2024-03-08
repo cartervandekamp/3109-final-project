@@ -1,8 +1,8 @@
 import React from 'react';
-import NavbarMobile from './components/NavbarMobile';
-import NavbarDesktop from './components/NavbarDesktop';
-import DoughnutChart from './components/DoughnutChart'; 
-import PolarChart from './components/PolarChart';
+import NavbarMobile from '@/components/NavbarMobile';
+import NavbarDesktop from '@/components/NavbarDesktop';
+import DoughnutChart from '@/components/DoughnutChart'; 
+import PolarChart from '@/components/PolarChart';
 
 export default function Home() {
   return (
