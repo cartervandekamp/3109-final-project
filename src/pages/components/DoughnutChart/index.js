@@ -4,7 +4,7 @@ import Chart from 'chart.js/auto';
 const DoughnutChart = () => {
     const chartRef = useRef(null);
     const chartInstance = useRef(null);
-    const [canvasDimensions, setCanvasDimensions] = useState({ width: 300, height: 300 });
+    const [canvasDimensions, setCanvasDimensions] = useState({ width: 200, height: 200 });
 
     useEffect(() => {
         if (chartInstance.current) {

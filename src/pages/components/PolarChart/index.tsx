@@ -4,7 +4,7 @@ import Chart from 'chart.js/auto';
 const PolarChart = () => {
     const chartRef = useRef(null);
     const chartInstance = useRef(null);
-    const [canvasDimensions, setCanvasDimensions] = useState({ width: 0, height: 0 });
+    const [canvasDimensions, setCanvasDimensions] = useState({ width: 200, height: 200 });
 
     useEffect(() => {
         if (chartInstance.current) {
@@ -58,7 +58,7 @@ const PolarChart = () => {
         };
     }, []);
 
-    return <div style={{ width: "60%", height: "60%" }}><canvas ref={chartRef} width={canvasDimensions.width} height={canvasDimensions.height} /></div>;
+    return <div style={{ width: "80%", height: "80%" }}><canvas ref={chartRef} width={canvasDimensions.width} height={canvasDimensions.height} /></div>;
 };
 
 export default PolarChart;
