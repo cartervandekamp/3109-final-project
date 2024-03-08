@@ -42,10 +42,21 @@
   color: var(--body-text);
   text-decoration: none;
   font-weight: bold;
+  text-align: right;
 }
 
 .label {
   flex-grow: 1; 
   display: flex; 
   align-items: flex-start;
+}
+
+/* MOBILE STYLES */
+
+@media screen and (max-width: 767px) {
+  .card {
+    width: 48%;
+    min-width: auto;
+    margin-bottom: 5%;
+  }
 }

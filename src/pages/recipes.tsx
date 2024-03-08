@@ -31,14 +31,17 @@ const RecipesPage = () => {
           <h1>What's on the menu today?</h1>
         </div>
         <form
+          className={styles.searchForm}
           onSubmit={(e) => {
             e.preventDefault();
             const formData = new FormData(e.currentTarget);
             handleSearch(formData.get('query') as string);
           }}
         >
-          <input type="text" name="query" placeholder="Search recipes..." className={styles.search}/>
-          <button type="submit">Search</button>
+          <div className={styles.searchContainer}>
+            <input type="text" name="query" placeholder="Search recipes..." className={styles.search}/>
+            <button type="submit" className={styles.searchButton}>Search</button>
+          </div>
         </form>
         <div className={styles.recipeContainer}>
           {recipes.map((recipe: any, index: number) => ( 
