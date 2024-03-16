@@ -1,4 +1,5 @@
 ///<reference types="cypress"/>
+import DoughnutChart from "@/components/DoughnutChart";
 
 context('Home Page Tests', () => {
   beforeEach(function() {
@@ -37,12 +38,12 @@ context('Home Page Tests', () => {
   });
 
   it('should have a navigation bar with links', () => {
-    cy.get('NavBarDesktop').should('exist');
-    // cy.get('nav a').should('have.length.gt', 0);
+    cy.get('ul').should('have.length', 1);
   });
 
   it('should have working charts on the info page', () => {
     cy.visit('http://localhost:3000/info');
+    cy.get('#chartCanvas').should('exist');
   });
 
   it('should have a footer at the bottom of the page', () => {

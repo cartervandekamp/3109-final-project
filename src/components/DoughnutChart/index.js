@@ -42,7 +42,9 @@ const DoughnutChart = () => {
         };
     }, []);
 
-    return <div style={{ width: "50%", height: "50%" }}><canvas ref={chartRef} width={canvasDimensions.width} height={canvasDimensions.height} /></div>;
+    return <div style={{ width: "50%", height: "50%" }}>
+        <canvas id="chartCanvas" ref={chartRef} width={canvasDimensions.width} height={canvasDimensions.height} />
+    </div>;
 };
 
 export default DoughnutChart;

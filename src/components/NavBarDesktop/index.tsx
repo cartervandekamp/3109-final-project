@@ -10,12 +10,12 @@ const NavbarDesktop = () => {
                     <Link href="/"><img src="/icons/Logo Green.png" alt="Logo" /></Link>
                     {/* <Link href="/">Culinary Compass</Link> */}
                 </div>
-                <div className={styles.navLinks}>
+                <ul className={styles.navLinks}>
                     <Link href="/">Home</Link>
                     <Link href="/recipes">Recipe</Link>
                     <Link href="/restaurants">Restaurants</Link>
                     <Link href="/info">Info</Link>
-                </div>
+                </ul>
             </div>
         </div>
     );

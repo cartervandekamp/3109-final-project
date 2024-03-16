@@ -16,6 +16,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "proxy-server.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "proxy-server.js", "src/components/PolarChart/index.js"],
   "exclude": ["node_modules"]
 }

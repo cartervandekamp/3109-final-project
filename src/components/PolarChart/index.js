@@ -37,7 +37,7 @@ const PolarChart = () => {
             options: {
                 responsive: true,
                 maintainAspectRatio: true,
-                aspectRatio: 1.5, 
+                aspectRatio: 1.5,
             }
         });
 
@@ -46,7 +46,7 @@ const PolarChart = () => {
             setCanvasDimensions({ width, height });
         };
 
-        handleResize(); 
+        handleResize();
 
         window.addEventListener('resize', handleResize);
 
