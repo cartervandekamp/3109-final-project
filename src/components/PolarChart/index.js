@@ -1,17 +1,17 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import Chart from 'chart.js/auto';
 
 const PolarChart = () => {
     const chartRef = useRef(null);
     const chartInstance = useRef(null);
-    const [canvasDimensions, setCanvasDimensions] = useState({ width: 200, height: 200 });
 
     useEffect(() => {
+        const ctx = chartRef.current.getContext('2d');
+
         if (chartInstance.current) {
             chartInstance.current.destroy();
         }
 
-        const ctx = chartRef.current.getContext('2d');
         chartInstance.current = new Chart(ctx, {
             type: 'polarArea',
             data: {
@@ -36,29 +36,22 @@ const PolarChart = () => {
             },
             options: {
                 responsive: true,
-                maintainAspectRatio: true,
-                aspectRatio: 1.5,
+                maintainAspectRatio: false, // Set to false for fully responsive behavior
             }
         });
-
-        const handleResize = () => {
-            const { width, height } = chartRef.current.parentElement.getBoundingClientRect();
-            setCanvasDimensions({ width, height });
-        };
-
-        handleResize();
-
-        window.addEventListener('resize', handleResize);
 
         return () => {
             if (chartInstance.current) {
                 chartInstance.current.destroy();
             }
-            window.removeEventListener('resize', handleResize);
         };
     }, []);
 
-    return <div style={{ width: "80%", height: "80%" }}><canvas ref={chartRef} width={canvasDimensions.width} height={canvasDimensions.height} /></div>;
+    return (
+        <div style={{ width: "100%", height: "100%" }}>
+            <canvas id="chartCanvas" ref={chartRef} />
+        </div>
+    );
 };
 
 export default PolarChart;

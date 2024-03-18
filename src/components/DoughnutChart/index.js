@@ -1,17 +1,17 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Chart from 'chart.js/auto';
 
 const DoughnutChart = () => {
     const chartRef = useRef(null);
     const chartInstance = useRef(null);
-    const [canvasDimensions, setCanvasDimensions] = useState({ width: 200, height: 200 });
 
     useEffect(() => {
+        const ctx = chartRef.current.getContext('2d');
+
         if (chartInstance.current) {
             chartInstance.current.destroy();
         }
 
-        const ctx = chartRef.current.getContext('2d');
         chartInstance.current = new Chart(ctx, {
             type: 'doughnut',
             data: {
@@ -30,8 +30,7 @@ const DoughnutChart = () => {
             },
             options: {
                 responsive: true,
-                maintainAspectRatio: true,
-                aspectRatio: 0.5,
+                maintainAspectRatio: false,
             }
         });
 
@@ -42,9 +41,11 @@ const DoughnutChart = () => {
         };
     }, []);
 
-    return <div style={{ width: "50%", height: "50%" }}>
-        <canvas id="chartCanvas" ref={chartRef} width={canvasDimensions.width} height={canvasDimensions.height} />
-    </div>;
+    return (
+        <div style={{ width: "100%", height: "100%" }}>
+            <canvas id="chartCanvas" ref={chartRef} />
+        </div>
+    );
 };
 
 export default DoughnutChart;
