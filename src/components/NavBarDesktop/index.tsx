@@ -12,7 +12,7 @@ const NavbarDesktop = () => {
                 </div>
                 <ul className={styles.navLinks}>
                     <Link href="/">Home</Link>
-                    <Link href="/recipes">Recipe</Link>
+                    <Link href="/recipes">Recipes</Link>
                     <Link href="/restaurants">Restaurants</Link>
                     <Link href="/info">Info</Link>
                 </ul>
