@@ -1,0 +1,20 @@
+.restaurantContainer {
+    display: flex;
+    overflow-x: scroll;
+    padding-bottom: 20px; 
+
+  }
+  
+  .restaurantContainer::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .restaurantContainer > * {
+    flex-shrink: 0;
+    margin-right: 10px; 
+  }
+  
+  .restaurantContainer > *:last-child {
+    margin-right: 0; 
+  }
+  

@@ -6,6 +6,7 @@ import React from "react";
 import HomePageRecipe from "@/components/HomePageRecipe";
 
 import styles from '@/styles/home.module.css';
+import HomePageRestaurant from "@/components/HomePageRestaurant";
 
 
 
@@ -24,6 +25,8 @@ export default function Home() {
           <div className={styles.recipeContainer}>
           <h3 className={styles.featuredText}>Featured Recipes</h3>
           <HomePageRecipe/>
+          <h3 className={styles.featuredText}>Featured Restaurants</h3>
+          <HomePageRestaurant/>
           </div>
         </div>
       </main>
