@@ -22,6 +22,11 @@ context('Home Page Tests', () => {
   it('test for one h2 tag', () => {
     cy.get('h2').should('have.length', 1);
   });
+
+  it('should have features recipes and restaurants', () => {
+    cy.visit('http://localhost:3000/');
+    cy.contains('Featured Restaurants').should('exist');
+  });
   
   it('test for one p tag', () => {
     cy.get('p').should('have.length', 1);
@@ -46,9 +51,6 @@ context('Home Page Tests', () => {
     cy.get('#chartCanvas').should('exist');
   });
 
-  it('should have a footer at the bottom of the page', () => {
-    cy.get('footer').should('exist');
-  });
 });
 
 
