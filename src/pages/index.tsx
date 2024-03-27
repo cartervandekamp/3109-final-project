@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import NavbarMobile from '@/components/NavbarMobile';
-import NavbarDesktop from '@/components/NavbarDesktop';
+import NavbarMobile from '@/components/NavBarMobile';
+import NavbarDesktop from '@/components/NavBarDesktop';
 import React from "react";
 import HomePageRecipe from "@/components/HomePageRecipe";
 
