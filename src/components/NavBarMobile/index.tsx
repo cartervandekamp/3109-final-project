@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from './NavbarMobile.module.css';
+import styles from './NavBarMobile.module.css';
 import Image from 'next/image';
 
 interface NavbarMobileProps {

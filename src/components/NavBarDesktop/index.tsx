@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from './NavbarDesktop.module.css'; 
+import styles from './NavBarDesktop.module.css'; 
 
 const NavbarDesktop = () => {
     return (
